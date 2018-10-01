@@ -83,17 +83,17 @@ public class DetailActivity extends AppCompatActivity {
         alsoKnownAs.setText(dataMissing(stringBuilder.toString()));
         stringBuilder = new StringBuilder();
         List<String> ingredientLists = sandwich.getIngredients();
-        for (String s:ingredientLists){
-            stringBuilder.append(s).append("\n");
+        for (String string:ingredientLists){
+            stringBuilder.append(string).append("\n");
         }
         ingredients.setText(dataMissing(stringBuilder.toString()));
 
     }
-    private String dataMissing(String s){
-        if (s.equals("")){
+    private String dataMissing(String string){
+        if (string.equals("")){
             return getString(R.string.data_missing);
         } else {
-            return s;
+            return string;
         }
     }
 }
