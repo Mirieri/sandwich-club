@@ -80,9 +80,7 @@ public class DetailActivity extends AppCompatActivity {
             out = new StringBuilder(out.substring(0, out.length() - 2));
 
         }
-
         alsoKnownAs.setText(dataMissing(out.toString()));
-
         out = new StringBuilder();
         List<String> ingredientLists = sandwich.getIngredients();
         for (String s:ingredientLists){

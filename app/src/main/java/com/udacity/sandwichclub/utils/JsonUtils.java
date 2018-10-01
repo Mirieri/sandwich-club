@@ -22,8 +22,6 @@ public class JsonUtils {
             for (int i=0; i<alsoKnownAs.length();i++){
                 alsoKnownAsList.add(alsoKnownAs.getString(i));
             }
-
-            //other atributes
             String placeOforigin = root.getString("placeOfOrigin");
             String description = root.getString("description");
             String image = root.getString("image");
