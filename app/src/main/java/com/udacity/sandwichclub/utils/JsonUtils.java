@@ -12,6 +12,13 @@ public class JsonUtils {
 
     public static Sandwich parseSandwichJson(String json) {
 
+        /*
+        * I have used several blogs to help me structure my code including
+        * https://guides.codepath.com/android/converting-json-to-models
+        * and
+        * https://www.codeproject.com/Articles/1112864/Android-JSON-Parsing-Tutorial
+        * */
+
         try {
             //Convert java object to JSON
             JSONObject root = new JSONObject(json);
