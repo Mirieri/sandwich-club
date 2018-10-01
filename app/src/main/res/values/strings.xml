@@ -7,11 +7,14 @@
     <string name="detail_description_label">Description:</string>
     <string name="detail_ingredients_label">Ingredients:</string>
 
+    <string name="data_missing">The is no data</string>
+
     <!-- Content descriptions-->
     <string name="sandwich_picture_content_description">Sandwich picture</string>
 
     <!-- Error messages-->
     <string name="detail_error_message">Sandwich data not available</string>
+    <string name="detail_name_label">Name:</string>
 
     <string-array name="sandwich_names">
         <item>Ham and cheese sandwich</item>
