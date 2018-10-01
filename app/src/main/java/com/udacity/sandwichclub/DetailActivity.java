@@ -73,8 +73,8 @@ public class DetailActivity extends AppCompatActivity {
 
         List<String> newsandwitchList = sandwich.getAlsoKnownAs();
         StringBuilder stringBuilder = new StringBuilder();
-        for (String s:newsandwitchList){
-            stringBuilder.append(s).append(",");
+        for (String string:newsandwitchList){
+            stringBuilder.append(string).append(",");
         }
         if(stringBuilder.length() >0){
             stringBuilder = new StringBuilder(stringBuilder.substring(0, stringBuilder.length() - 2));
