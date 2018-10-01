@@ -72,21 +72,21 @@ public class DetailActivity extends AppCompatActivity {
         name.setText(dataMissing(sandwich.getMainName()));
 
         List<String> newsandwitchList = sandwich.getAlsoKnownAs();
-        StringBuilder out = new StringBuilder();
+        StringBuilder stringBuilder = new StringBuilder();
         for (String s:newsandwitchList){
-            out.append(s).append(",");
+            stringBuilder.append(s).append(",");
         }
-        if(out.length() >0){
-            out = new StringBuilder(out.substring(0, out.length() - 2));
+        if(stringBuilder.length() >0){
+            stringBuilder = new StringBuilder(stringBuilder.substring(0, stringBuilder.length() - 2));
 
         }
-        alsoKnownAs.setText(dataMissing(out.toString()));
-        out = new StringBuilder();
+        alsoKnownAs.setText(dataMissing(stringBuilder.toString()));
+        stringBuilder = new StringBuilder();
         List<String> ingredientLists = sandwich.getIngredients();
         for (String s:ingredientLists){
-            out.append(s).append("\n");
+            stringBuilder.append(s).append("\n");
         }
-        ingredients.setText(dataMissing(out.toString()));
+        ingredients.setText(dataMissing(stringBuilder.toString()));
 
     }
     private String dataMissing(String s){
